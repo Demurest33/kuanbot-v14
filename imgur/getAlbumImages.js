@@ -8,8 +8,6 @@ export default async function getAlbumImages(albumId) {
         url: `https://api.imgur.com/3/album/${albumId}/images`,
         headers: { 
             'Authorization': `${process.env.bearerToken}`,
-            // 'Authorization': `Bearer ba2d895e235e92acfda0ec7c29076cc24fb6ac96`,
-            
         }
     };
 
