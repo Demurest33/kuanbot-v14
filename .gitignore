@@ -1,0 +1,7 @@
+node_modules
+.env
+template
+voicechatTry.js
+voicechatTry2.js
+audio.mp3
+getCommands.js
