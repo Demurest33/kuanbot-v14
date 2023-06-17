@@ -8,7 +8,6 @@ export default async function getAlbumsFromUser(username, doujinshi = false) {
         url: `https://api.imgur.com/3/account/${username}/albums`,
         headers: { 
             'Authorization': `${process.env.bearerToken}`,
-            // 'Authorization': `Bearer ba2d895e235e92acfda0ec7c29076cc24fb6ac96`,
         }
     };
     const response = await Request(config).catch((error) => {console.log(error);});
@@ -28,7 +27,7 @@ export default async function getAlbumsFromUser(username, doujinshi = false) {
 
 
 // async function main(){
-//     const test = await getAlbumsFromUser('demurest33', true);
+//     const test = await getAlbumsFromUser(process.env.imgurUsername, true);
 //     console.log(test);
 // }
 // main();
